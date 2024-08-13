@@ -14,7 +14,12 @@ const makeRequest = async <T, >(url: string, method: Method, data: any) => {
         const response = await client.request<T>(config);
         return response.data;
     } catch (error) {
-        throw error;
+        console.log(error)
+        var message = "Something went wrong!";
+        if (error.response && error.response.data.error) {
+            message = error.response.data.error;
+        }
+        return {error: message};
     }
 }
 
