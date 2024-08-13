@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shawty - URL Shortener
 
-## Getting Started
+**Shawty** is a URL shortening application built using Next.js and Node.js (v18). This app allows users to shorten long URLs into manageable, easy-to-share links.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **URL Shortening**: Shorten long URLs into short, unique links.
+- **URL Redirection**: Redirect users to the original URL when they visit the short link.
+- **URL Expiration**: Set an expiration date for short links.
+
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+
+- **Node.js v18**: This app requires Node.js version 18 or later.
+- **NPM or Yarn**: To manage dependencies.
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/semihyonet/shawty-fe
+   cd shawty
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Create a `.env.local` file**:
+   Create a `.env.local` file in the root directory and add necessary environment variables (e.g., database connection strings, API keys).
+```.dotenv
+BASEURL=http://localhost:80
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   The application will be accessible at [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Building for Production
 
-## Learn More
+To build and run the application in production mode:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Build the application**:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Start the application**:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## DOCKER
 
-## Deploy on Vercel
+You can also run the application using Docker. To build and run the application in a Docker container:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Build the Docker image**:
+   ```bash
+   docker build -t shawty .
+   ```
+2. **Run the Docker container**:
+   ```bash
+   docker run -p 3000:3000 shawty
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Happy shortening with Shawty! 🎉
