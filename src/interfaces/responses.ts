@@ -1,7 +1,7 @@
 interface ShortenUrlResponse {
     short_url: string;
     original_url: string;
-    expires_at: Date;
+    expiration_date: string;
 }
 
 export {ShortenUrlResponse};
