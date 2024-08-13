@@ -1,5 +1,5 @@
 # Shawty - URL Shortener
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d74ae2e5-c653-45be-b89e-0a5abeadbfd2/deploy-status)](https://app.netlify.com/sites/shawtylink/deploys)
 **Shawty** is a URL shortening application built using Next.js and Node.js (v18). This app allows users to shorten long URLs into manageable, easy-to-share links.
 
 ## Features
