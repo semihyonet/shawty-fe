@@ -5,7 +5,7 @@ import shawtyAPI from "@/api/shawtyAPI";
 import {ShortenUrlResponse} from "@/interfaces/responses";
 import {redirect} from "next/navigation";
 
-const Page = async ({params}) => {
+const Page = async ({params} : {params: {shortSlug: string}}) => {
         const response = await shawtyAPI.getOriginalUrl(params.shortSlug)
 
         if ('error' in response) {

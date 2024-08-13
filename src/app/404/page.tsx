@@ -11,8 +11,8 @@ const MyComponent = () => {
                         <h2 className=" font-bold leading-7 text-red-400 text-md text-pretty sm:text-2xl uppercase ">
                             Shawty not found 404... :( </h2>
                         <p className="mt-2 text text-3xl sm:text-6xl font-bold tracking-tight text-gray-900 ">
-                            Shawty URL wasn't found <br/>
-                            Why don't you create another one?
+                            Shawty URL was not found <br/>
+                            Why dont you create another one?
                         </p>
                         <br/>
                         <br/>
