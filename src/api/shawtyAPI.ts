@@ -5,10 +5,10 @@ import {ShortenUrlResponse} from "@/interfaces/responses";
 
 const shawtyAPI = {
     shortenUrl: async (body: ShortenUrlRequest) => {
-        return await makeRequest<ShortenUrlResponse>("/shorten", "POST", body);
+        return await makeRequest<ShortenUrlResponse>("api/v1/url-shortener/shorten", "POST", body);
     },
     getOriginalUrl: async (shortUrl: string) => {
-        return await makeRequest<ShortenUrlResponse>(`/retrieve/${shortUrl}`, "GET", null);
+        return await makeRequest<ShortenUrlResponse>(`api/v1/url-shortener/retrieve/${shortUrl}`, "GET", null);
     }
 }
 
