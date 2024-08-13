@@ -1,7 +1,7 @@
 import React from 'react';
 import {ArrowPathIcon, CheckCircleIcon} from "@heroicons/react/16/solid";
 
-const Button = ({content, callback, isActive}) => {
+const Button = ({content, callback, isActive} : {content: string, callback: () => void, isActive: boolean}) => {
     return (
         <button
             type="submit"
